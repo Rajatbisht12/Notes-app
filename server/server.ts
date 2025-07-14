@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 
 app.use(cors({
-  origin: ['https://notes-app-kohl-beta.vercel.app'], // Frontend URLs
+  origin: 'https://notes-app-kohl-beta.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
