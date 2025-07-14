@@ -17,7 +17,8 @@ app.use((req, res, next) => {
   const allowedOrigins = [
     'https://notes-app-kohl-beta.vercel.app',
     'https://notes-kkpx8rcfv-rajat-bishts-projects.vercel.app',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://notes-fwnltx242-rajat-bishts-projects.vercel.app'
   ];
   
   const origin = req.headers.origin;
