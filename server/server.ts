@@ -6,6 +6,7 @@ import { errorHandler } from './utils/errorHandler';
 import { clerkMiddleware } from '@clerk/express';
 import cors from 'cors';
 
+
 dotenv.config();
 
 const app = express();
@@ -22,6 +23,7 @@ app.use(cors({
 app.use(express.json());
 app.use(clerkMiddleware()); // Move before routes for auth
 app.use('/api', router);
+
 
 
 app.use(errorHandler);
