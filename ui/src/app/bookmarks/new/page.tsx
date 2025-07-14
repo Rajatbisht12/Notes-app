@@ -72,7 +72,7 @@ const NewBookmarkPage = () => {
   
   try {
     const tagsArray = formData.tags.split(',').map(tag => tag.trim()).filter(tag => tag)
-    const response = await api.post('/bookmarks', {
+    await api.post('/bookmarks', {
       ...formData,
       tags: tagsArray
     })

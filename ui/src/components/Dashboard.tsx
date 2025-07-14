@@ -57,7 +57,7 @@ const Dashboard = () => {
     <div>
       <div className="mb-12">
         <h1 className="text-3xl font-bold mb-2">Welcome back, {user?.firstName}!</h1>
-        <p className="text-gray-600">Here's what you've been working on recently</p>
+        <p className="text-gray-600">Here&apos;s what you&apos;ve been working on recently</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -79,7 +79,7 @@ const Dashboard = () => {
             <DashboardSkeleton />
           ) : recentNotes.length === 0 ? (
             <div className="text-center py-8">
-              <p className="text-gray-500 mb-4">You haven't created any notes yet</p>
+              <p className="text-gray-500 mb-4">You haven&apos;t created any notes yet</p>
               <Link href="/notes/new">
                 <Button>Create your first note</Button>
               </Link>
@@ -129,7 +129,7 @@ const Dashboard = () => {
             <DashboardSkeleton />
           ) : recentBookmarks.length === 0 ? (
             <div className="text-center py-8">
-              <p className="text-gray-500 mb-4">You haven't saved any bookmarks yet</p>
+              <p className="text-gray-500 mb-4">You haven&apos;t created any notes yet</p>
               <Link href="/bookmarks/new">
                 <Button>Save your first bookmark</Button>
               </Link>

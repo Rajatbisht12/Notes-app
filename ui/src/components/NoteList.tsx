@@ -4,8 +4,16 @@ import { Button } from '@/components/ui/button'
 import api from '@/lib/api'
 import Link from 'next/link'
 
+interface Note {
+  id: string;
+  title: string;
+  content: string;
+  tags: string[];
+  createdAt: string;
+}
+
 const NoteList = ({ notes, loading, onDelete }: { 
-  notes: any[]; 
+  notes: Note[]; 
   loading: boolean; 
   onDelete: () => void; 
 }) => {

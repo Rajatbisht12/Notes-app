@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { Button } from '@/components/ui/button'
-import { Home, Bookmark, Notebook, Plus, Search } from 'lucide-react'
+import { Home, Bookmark, Notebook, Search } from 'lucide-react'
 
 const Navbar = () => {
   const pathname = usePathname()
